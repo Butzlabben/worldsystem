@@ -50,9 +50,8 @@ body:
       label: Checklist
       description: Make sure you have followed each of the steps outlined here.
       options:
-        - label: If I use the newest Plugin version, I can't run it.
+        - label: If I use the newest Plugin version, I can not run it.
         - label: I get an error message that because of the new version.
-      required: false
 
   - type: input
     attributes:
