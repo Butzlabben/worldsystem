@@ -52,7 +52,7 @@ body:
       options:
         - label: If I use the newest Plugin version, I can not run it.
         - label: I get an error message that because of the new version.
-      validations:
+    validations:
       required: false
 
   - type: input
