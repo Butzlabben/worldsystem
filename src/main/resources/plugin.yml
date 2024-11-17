@@ -1,0 +1,80 @@
+name: ${name}
+main: ${main}
+version: ${version}
+authors: ${authors}
+description: ${description}
+api-version: ${apiversion}
+load: STARTUP
+folia-supported: false
+depend: ${depend}
+softdepend: ${softdepend}
+
+commands:
+  ws:
+    description: WorldSystem command
+    usage: /ws <subcommand>
+
+permissions:
+  ws.*:
+    default: op
+    description: Grants all WorldSystem subcommands
+    children:
+      ws.tp.*: true
+      ws.get: true
+      ws.sethome: true
+      ws.build: true
+      ws.gamemode: true
+      ws.delete: true
+      ws.lag: true
+      ws.big: true
+      ws.large: true
+
+  ws.tp:
+    default: op
+    description: You can teleport everything
+    children:
+      ws.tp.world: true
+      ws.tp.toother: true
+      ws.tp.other: true
+
+  ws.build:
+    default: op
+    description: You can build on other Worlds without WorldPermissions
+
+  ws.get:
+    default: true
+    description: You can create a world via /ws get
+
+  ws.delete:
+    default: op
+    description: You can delete a world
+
+  ws.gamemode:
+    default: op
+    description: You can change GameMode on other worlds
+
+  ws.tp.other:
+    default: op
+    description: You can teleport other players
+
+  ws.tp.toother:
+    default: op
+    description: You can teleport across worlds
+
+  ws.tp.world:
+    default: op
+    description: You can teleport to worlds without permission
+
+  ws.lag:
+    default: op
+    description: You can see lag messages
+
+  ws.big:
+    default: op
+    description: Gives you a bigger world (if set)
+
+  ws.large:
+    default: op
+    description: Grants access to larger world features
+    children: 
+      ws.big: true

@@ -7,10 +7,9 @@
 
 	"features": {
 		"ghcr.io/devcontainers/features/java:1": {
-			"version": "17",
-			"installMaven": "false",
-			"installGradle": "true",
-			"postCreateCommand": "java -version && chmod +x gradlew"
+			"version": "21",
+			"installMaven": "true",
+			"installGradle": "false"
 		}
 	}
 

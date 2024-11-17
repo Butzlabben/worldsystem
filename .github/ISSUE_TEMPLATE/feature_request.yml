@@ -1,13 +1,13 @@
 name: Feature request
-description: Suggest an idea for this project
+description: Suggest an idea for this plugin
 labels: 'Enhancement'
 
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this feature request for WorldSystem! Fill out the following form to your best ability to help us understand your feature request and greately improve the change of it getting added.
-        For anything else than a feature request, use our Discord server or the wiki.
+        ### Thank you for submitting a WorldSystem feature request!  
+        Fill out the form to help us understand your request and improve its chances of being added.
 
   - type: textarea
     attributes:
@@ -19,11 +19,6 @@ body:
   - type: textarea
     attributes:
       label: Are there any alternatives?
-      description: List any alternatives you might have tried
+      description: List any alternatives you might have tried.
     validations:
-      required: true
-
-  - type: textarea
-    attributes:
-      label: Anything else?
-      description: You can provide additional context below.
+      required: false

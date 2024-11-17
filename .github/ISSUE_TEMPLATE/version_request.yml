@@ -1,0 +1,63 @@
+name: Version request
+description: Ask for a new version of our plugin because of Minecraft or plugin updates
+labels: 'bug'
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### Fill out the following form to get a new release. (Hopefully)  
+        Thanks to inform us about updates and dependencies.  
+        _Sometimes Plugins, Softwares and Minecraft itself updates to a new version._  
+        _Because that happens very often we can't keep track of everything._
+        
+  - type: dropdown
+    attributes:
+      label: Server Implementation
+      description: Which server Implementation are you using? If your server implementation is not listed, it is not supported. Switch to a supported version first.
+      multiple: false
+      options:
+        - PurPur
+        - Paper
+        - Spigot
+    validations:
+      required: true
+
+  - type: dropdown
+    attributes:
+      label: What has been updated?
+      description: What is the Name of the Plugin or Software (you can check multiple)
+      multiple: true
+      options:
+        - Minecraft
+        - PlaceholderAPI
+        - VaultAPI
+        - WorldEdit
+        - FastAsyncWorldEdit
+        - other
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Name the version
+      description: Name the software too, if you selected multiple! 
+    validations:
+      required: true
+
+  - type: checkboxes
+    attributes:
+      label: Checklist
+      description: Make sure you have followed each of the steps outlined here.
+      options:
+        - label: If I use the newest Plugin version, I can not run it.
+        - label: I get an error message that because of the new version.
+    validations:
+      required: false
+
+  - type: input
+    attributes:
+      label: Error log (if applicable)
+      description: If you are reporting a console error, upload any relevant log excerpts to https://gist.github.com, save and paste the link in this box.
+    validations:
+      required: false

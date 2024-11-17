@@ -1,19 +1,19 @@
 name: Bug report
-description: Create a report to help us improve the Plugin
+description: Help us improve the plugin
 labels: 'bug'
 
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report for WorldSystem! Fill out the following form to your best ability to help us fix the problem.
-        Only use this if you're absolutely sure that you found a bug and can reproduce it. For anything else, use our Discord server or the wiki.
-        Do NOT use the public issue tracker to report security vulnerabilities! They are disclosed using the [github vulnerabilitie](https://github.com/Argantiu/WorldSystem-Updated/security/advisories/new) form!
+        ### Thank you for reporting a WorldSystem bug!  
+        Fill out the following form to your best ability to help us fix the problem.  
+        **Only use this if you're absolutely sure that you found a bug and can reproduce it.**
 
   - type: dropdown
     attributes:
-      label: Server Implementation
-      description: Which server Implementation are you using? If your server implementation is not listed, it is not supported. Switch to a supported version first.
+      label: Which server Sortware (Implementation) are you using?
+      description: If not listed, it is not supported. Switch to a supported version first.
       multiple: false
       options:
         - PurPur
@@ -24,18 +24,15 @@ body:
 
   - type: dropdown
     attributes:
-      label: Server Version
-      description: Which server version version you using? If your server version is not listed, it is not supported. Update to a supported version first.
+      label: Which server version version you using?
+      description: If not listed, it is not supported. Update to a supported version first.
       multiple: false
       options:
-        - '1.20.4'
-        - '1.20.2'
-        - '1.19.3'
-        - '1.19.2'
-        - '1.19.1'
-        - '1.19'
+        - 'above 1.21.3'
+        - '1.21.3'
+        - '1.20.6'
+        - '1.19.4'
         - '1.18.2'
-        - '1.18.1'
         - '1.17.1'
         - '1.16.5'
     validations:
@@ -46,7 +43,14 @@ body:
       label: Describe the bug
       description: A clear and concise description of what the bug is.
     validations:
-      required: true
+      required: false
+
+  - type: textarea
+    attributes:
+      label: Expected behaviour
+      description: A clear and concise description of what you expected to happen.
+    validations:
+      required: false
 
   - type: textarea
     attributes:
@@ -58,45 +62,20 @@ body:
         3. Scroll down to '...'
         4. See error
     validations:
-      required: true
-
-  - type: textarea
-    attributes:
-      label: Expected behaviour
-      description: A clear and concise description of what you expected to happen.
-    validations:
-      required: true
-
-  - type: textarea
-    attributes:
-      label: Screenshots / Videos
-      description: If applicable, add screenshots to help explain your problem.
+      required: false
 
   - type: input
     attributes:
       label: Error log (if applicable)
-      description: If you are reporting a console error, upload any relevant log excerpts to either https://paste.gg/ or https://gist.github.com, save and the paste the link in this box.
-
-  - type: dropdown
-    attributes:
-      label: WorldSystem Version
-      description: What version of WorldSystem are you running? (`/ws help`)
-      multiple: false
-      options:
-        - '2.4.37 (dev)'
-        - '2.4.36'
+      description: If you are reporting a console error, upload any relevant log excerpts to https://gist.github.com, save and paste the link in this box.
     validations:
-      required: true
+      required: false
 
   - type: checkboxes
     attributes:
       label: Checklist
-      description: Make sure you have followed each of the steps outlined here.
+      description: Are you using the newest build?
       options:
-        - label: I am using the newest build from https://github.com/Argantiu/WorldSystem-Updated and the issue still persists.
+        - label: I use the latest version from [danielbyomujuni/WorldSystem](https://github.com/danielbyomujuni/WorldSystem)
+        - label: I use the latest version from [Argantiu/WorldSystem-Updated](https://github.com/Argantiu/WorldSystem-Updated) and the issue still persists.
           required: false
-
-  - type: textarea
-    attributes:
-      label: Anything else?
-      description: You can provide additional context below.

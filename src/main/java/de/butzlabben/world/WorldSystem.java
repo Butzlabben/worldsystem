@@ -165,7 +165,7 @@ public class WorldSystem extends JavaPlugin {
                 && PluginConfig.loadWorldsASync()
                 && !is1_13Plus) {
 
-            // creator = new AsyncCreatorAdapter(); // Since FAWE 2.0 this do nothing
+            //creator = new AsyncCreatorAdapter(); // Since FAWE 2.0 this do nothing
             Bukkit.getConsoleSender()
                     .sendMessage(PluginConfig.getPrefix() + "Found FAWE! Worlds now will be created asynchronously");
         } else {

@@ -1,8 +1,8 @@
-blank_issues_enabled: true
+blank_issues_enabled: false
 contact_links:
   - name: WorldSystem Discord
-    url: https://discord.gg/WYz7Qck
-    about: Our support Discord, please ask questions and search support here.
+    url: https://discord.gg/cmdPMJ8
+    about: Our Discord, you can try to ask questions here
   - name: WorldSystem Wiki
-    url: https://github.com/Argantiu/WorldSystem-Updated/wiki
-    about: Take a look at the wiki page for instructions how to setup WorldSystem and use its commands.
+    url: https://github.com/danielbyomujuni/WorldSystem/wiki
+    about: Take a look at the wiki page for instructions how to setup and use WorldSystem
