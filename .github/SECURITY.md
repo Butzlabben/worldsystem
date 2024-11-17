@@ -1,22 +1,13 @@
 # Security Policy
-
 ## Supported Versions
-
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
-
-| Version | Supported          |
-| ------- | ------------------ |
-| >2.4.35   | :white_check_mark: |
-| 2.4.34   | :x:                |
-| < 2.4.33   | :x:                |
-
+Only the latest version at Argantiu/WorldSystem-Updated or in Releases is Supported.
+  
 ## Reporting a Vulnerability
 
-This software was edited by CrazyCloudCraft.  
-The offical Creator @trainerlord seems to be online again, so we will end the support here.
-We do not support forks or other (malware) downloads exapt for our [github site](https://github.com/CrazyCloudCraft/worldsystem-depecated/) or [trainerlords site](https://github.com/trainerlord/WorldSystem)
-Please write any security bugs directly to our issues.  
-For direct support contact N1klasse#1486 or Trainerlord#3534 on discord.  
-  
-[Here are more informations about privacy policy](https://crazycloudcraft.de/en/privacypolicy/)  
+We do not support forks or other (malware) downloads exapt for [danielbyomujuni/WorldSystem](https://github.com/danielbyomujuni/WorldSystem) or [Argantiu/WorldSystem-Updated](https://github.com/Argantiu/WorldSystem-Updated) 
+For secruity bugs go to our issue tracker. 
+
+## Support
+
+<b>We do not support</b> other ways of communication for support exept the issue tracker.  
+  Support requests via other channels <b>can be</b> rejected!

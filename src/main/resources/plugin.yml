@@ -1,13 +1,13 @@
-name: WorldSystem
-main: de.butzlabben.world.WorldSystem
-version: 2.5.0-dev
-authors: [Butzlabben, Trainerlord, Cycodly]
-description: WorldSystem plugin to create per player worlds
-api-version: 1.21
+name: ${name}
+main: ${main}
+version: ${version}
+authors: ${authors}
+description: ${description}
+api-version: ${apiversion}
 load: STARTUP
 folia-supported: false
-depend: [WorldEdit]
-softdepend: [PlaceholderAPI, Vault]
+depend: ${depend}
+softdepend: ${softdepend}
 
 commands:
   ws:
