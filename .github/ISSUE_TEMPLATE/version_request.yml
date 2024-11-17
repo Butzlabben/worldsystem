@@ -52,9 +52,12 @@ body:
       options:
         - label: If I use the newest Plugin version, I can not run it.
         - label: I get an error message that because of the new version.
+      validations:
+      required: false
 
   - type: input
     attributes:
       label: Error log (if applicable)
       description: If you are reporting a console error, upload any relevant log excerpts to https://gist.github.com, save and paste the link in this box.
+    validations:
       required: false
